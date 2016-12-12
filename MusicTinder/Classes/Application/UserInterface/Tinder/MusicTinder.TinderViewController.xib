@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="fredoka-one.regular.ttf">
+            <string>FredokaOne-Regular</string>
+            <string>FredokaOne-Regular</string>
+            <string>FredokaOne-Regular</string>
+            <string>FredokaOne-Regular</string>
+            <string>FredokaOne-Regular</string>
+            <string>FredokaOne-Regular</string>
+            <string>FredokaOne-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TinderViewController" customModule="MusicTinder" customModuleProvider="target">
+            <connections>
+                <outlet property="artistLabel" destination="F7g-24-cs4" id="czM-6i-pfU"/>
+                <outlet property="artistNameLabel" destination="ofn-Jr-Way" id="9Vc-0H-COo"/>
+                <outlet property="artistScrollView" destination="J7z-5a-chM" id="5Cw-iG-X9k"/>
+                <outlet property="bufferingLabel" destination="jDt-f9-mPg" id="Amk-lK-yDF"/>
+                <outlet property="collectionImageview" destination="sGh-Ww-WeL" id="ui6-cv-xvy"/>
+                <outlet property="greenView" destination="FX3-zK-rLd" id="BAz-SG-ENC"/>
+                <outlet property="listenButton" destination="eMH-2a-jIM" id="KbC-7U-8aH"/>
+                <outlet property="messageOverlayLabel" destination="p0l-Xd-wNB" id="Y1f-zu-jsX"/>
+                <outlet property="messageOverlayView" destination="r7M-YM-gpI" id="bxh-uI-L9c"/>
+                <outlet property="redView" destination="Du8-S1-3dT" id="P8u-mG-0YS"/>
+                <outlet property="songInfoView" destination="30w-fR-D61" id="iig-fS-mKK"/>
+                <outlet property="songInfoViewHeightConstraint" destination="e6b-uE-f6o" id="tZk-To-bvc"/>
+                <outlet property="songNameLabel" destination="1ez-yC-iKd" id="X78-CS-veK"/>
+                <outlet property="view" destination="iN0-l3-epB" id="FMF-q1-SKc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="676"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="6hb-su-zhh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="676"/>
+                    <color key="backgroundColor" red="0.23529411759999999" green="0.85882352939999995" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FX3-zK-rLd">
+                    <rect key="frame" x="0.0" y="116" width="300" height="300"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Du8-S1-3dT">
+                    <rect key="frame" x="300" y="116" width="300" height="300"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7g-24-cs4">
+                    <rect key="frame" x="8" y="8" width="584" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="uJR-xs-6V7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="30"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7z-5a-chM">
+                    <rect key="frame" x="0.0" y="116" width="600" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ui3-vP-UWQ"/>
+                    </connections>
+                </scrollView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7M-YM-gpI">
+                    <rect key="frame" x="0.0" y="116" width="600" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AWESOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p0l-Xd-wNB">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="50"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="p0l-Xd-wNB" secondAttribute="bottom" id="3Wh-sZ-B5w"/>
+                        <constraint firstItem="p0l-Xd-wNB" firstAttribute="leading" secondItem="r7M-YM-gpI" secondAttribute="leading" id="5AF-we-6SC"/>
+                        <constraint firstAttribute="trailing" secondItem="p0l-Xd-wNB" secondAttribute="trailing" id="fCW-nJ-PgT"/>
+                        <constraint firstItem="p0l-Xd-wNB" firstAttribute="top" secondItem="r7M-YM-gpI" secondAttribute="top" id="yyx-q4-78S"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dU2-Qv-VGD">
+                    <rect key="frame" x="8" y="424" width="584" height="86"/>
+                    <subviews>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMH-2a-jIM">
+                            <rect key="frame" x="150" y="20" width="284" height="46"/>
+                            <color key="backgroundColor" red="0.23529411759999999" green="0.85882352939999995" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="284" id="4RH-Wb-6Ji"/>
+                                <constraint firstAttribute="height" constant="46" id="BIu-t3-SAV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="20"/>
+                            <state key="normal" title="LISTEN">
+                                <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="listenButtonTapped" destination="-1" eventType="touchUpInside" id="czI-ve-qZS"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="buffering..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDt-f9-mPg">
+                            <rect key="frame" x="250" y="74" width="84" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="9op-fr-76W"/>
+                                <constraint firstAttribute="width" constant="84" id="GUI-EG-xtP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="15"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="eMH-2a-jIM" firstAttribute="centerY" secondItem="dU2-Qv-VGD" secondAttribute="centerY" id="1Pg-LT-85L"/>
+                        <constraint firstItem="jDt-f9-mPg" firstAttribute="centerX" secondItem="dU2-Qv-VGD" secondAttribute="centerX" id="GfG-h7-6F4"/>
+                        <constraint firstItem="eMH-2a-jIM" firstAttribute="centerX" secondItem="dU2-Qv-VGD" secondAttribute="centerX" id="cmW-6h-7f1"/>
+                        <constraint firstItem="jDt-f9-mPg" firstAttribute="top" secondItem="eMH-2a-jIM" secondAttribute="bottom" constant="8" id="md5-XO-eLG"/>
+                    </constraints>
+                </view>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30w-fR-D61">
+                    <rect key="frame" x="8" y="518" width="584" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8I-3M-ELE">
+                            <rect key="frame" x="0.0" y="0.0" width="584" height="150"/>
+                            <connections>
+                                <action selector="songInfoButtonTapped" destination="-1" eventType="touchUpInside" id="5LU-dA-e5l"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slaughter Of The Soul" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1ez-yC-iKd">
+                            <rect key="frame" x="150" y="8" width="434" height="27"/>
+                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="22"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbx-bT-EXM">
+                            <rect key="frame" x="150" y="35" width="22" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="HZ2-2w-cFh"/>
+                                <constraint firstAttribute="height" constant="30" id="hFv-mc-vFl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="17"/>
+                            <color key="textColor" red="0.23529411759999999" green="0.85882352939999995" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sGh-Ww-WeL">
+                            <rect key="frame" x="8" y="8" width="134" height="134"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="sGh-Ww-WeL" secondAttribute="height" multiplier="1:1" id="md8-l4-t2H"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="At The Gates" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ofn-Jr-Way">
+                            <rect key="frame" x="180" y="35" width="404" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="L9t-u2-NHS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="16"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="L8I-3M-ELE" firstAttribute="leading" secondItem="30w-fR-D61" secondAttribute="leading" id="DtY-Hr-Mo2"/>
+                        <constraint firstItem="ofn-Jr-Way" firstAttribute="leading" secondItem="Cbx-bT-EXM" secondAttribute="trailing" constant="8" id="EKu-Bi-k4X"/>
+                        <constraint firstAttribute="trailing" secondItem="ofn-Jr-Way" secondAttribute="trailing" id="I1I-X1-2uM"/>
+                        <constraint firstAttribute="bottom" secondItem="sGh-Ww-WeL" secondAttribute="bottom" constant="8" id="Jzq-cp-0xZ"/>
+                        <constraint firstItem="Cbx-bT-EXM" firstAttribute="top" secondItem="1ez-yC-iKd" secondAttribute="bottom" id="LFe-GE-TXG"/>
+                        <constraint firstItem="1ez-yC-iKd" firstAttribute="top" secondItem="30w-fR-D61" secondAttribute="top" constant="8" id="NUE-jB-oFo"/>
+                        <constraint firstAttribute="trailing" secondItem="L8I-3M-ELE" secondAttribute="trailing" id="O5R-Ro-ZnD"/>
+                        <constraint firstItem="ofn-Jr-Way" firstAttribute="top" secondItem="1ez-yC-iKd" secondAttribute="bottom" id="PEW-R6-wV7"/>
+                        <constraint firstAttribute="trailing" secondItem="1ez-yC-iKd" secondAttribute="trailing" id="SaU-Xk-flb"/>
+                        <constraint firstItem="1ez-yC-iKd" firstAttribute="leading" secondItem="sGh-Ww-WeL" secondAttribute="trailing" constant="8" id="Xh3-lP-be4"/>
+                        <constraint firstItem="Cbx-bT-EXM" firstAttribute="leading" secondItem="sGh-Ww-WeL" secondAttribute="trailing" constant="8" id="YRW-kj-wBW"/>
+                        <constraint firstAttribute="bottom" secondItem="L8I-3M-ELE" secondAttribute="bottom" id="agK-4V-2QE"/>
+                        <constraint firstItem="L8I-3M-ELE" firstAttribute="top" secondItem="30w-fR-D61" secondAttribute="top" id="cQ3-wj-8ik"/>
+                        <constraint firstAttribute="height" constant="150" id="e6b-uE-f6o"/>
+                        <constraint firstItem="sGh-Ww-WeL" firstAttribute="top" secondItem="30w-fR-D61" secondAttribute="top" constant="8" id="juZ-PR-Brq"/>
+                        <constraint firstItem="sGh-Ww-WeL" firstAttribute="leading" secondItem="30w-fR-D61" secondAttribute="leading" constant="8" id="kc5-gN-TQn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="dU2-Qv-VGD" firstAttribute="top" secondItem="J7z-5a-chM" secondAttribute="bottom" constant="8" id="11L-No-p4m"/>
+                <constraint firstAttribute="trailing" secondItem="r7M-YM-gpI" secondAttribute="trailing" id="4p2-Bw-rtK"/>
+                <constraint firstItem="Du8-S1-3dT" firstAttribute="leading" secondItem="FX3-zK-rLd" secondAttribute="trailing" id="6pN-ES-QaD"/>
+                <constraint firstAttribute="trailing" secondItem="6hb-su-zhh" secondAttribute="trailing" id="7RS-cz-yDq"/>
+                <constraint firstItem="FX3-zK-rLd" firstAttribute="top" secondItem="F7g-24-cs4" secondAttribute="bottom" constant="8" id="A5l-EL-nAR"/>
+                <constraint firstAttribute="trailing" secondItem="F7g-24-cs4" secondAttribute="trailing" constant="8" id="AyC-fI-jb9"/>
+                <constraint firstItem="r7M-YM-gpI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EUy-Nm-wCk"/>
+                <constraint firstItem="J7z-5a-chM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HIP-BL-WUW"/>
+                <constraint firstItem="30w-fR-D61" firstAttribute="top" secondItem="dU2-Qv-VGD" secondAttribute="bottom" constant="8" id="ImV-KL-wRw"/>
+                <constraint firstItem="FX3-zK-rLd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JQ5-8l-RtK"/>
+                <constraint firstItem="30w-fR-D61" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="MnK-Wn-PZl"/>
+                <constraint firstItem="dU2-Qv-VGD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="QgM-IK-wMd"/>
+                <constraint firstAttribute="trailing" secondItem="J7z-5a-chM" secondAttribute="trailing" id="TDm-cf-PYx"/>
+                <constraint firstItem="Du8-S1-3dT" firstAttribute="top" secondItem="F7g-24-cs4" secondAttribute="bottom" constant="8" id="V68-zc-PKG"/>
+                <constraint firstItem="FX3-zK-rLd" firstAttribute="width" secondItem="Du8-S1-3dT" secondAttribute="height" multiplier="1:1" id="Whf-xb-NkI"/>
+                <constraint firstAttribute="bottom" secondItem="6hb-su-zhh" secondAttribute="bottom" id="XEx-Co-hBj"/>
+                <constraint firstItem="6hb-su-zhh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YlG-AM-Lbo"/>
+                <constraint firstItem="Du8-S1-3dT" firstAttribute="height" secondItem="FX3-zK-rLd" secondAttribute="height" id="awQ-3f-qhc"/>
+                <constraint firstAttribute="trailing" secondItem="30w-fR-D61" secondAttribute="trailing" constant="8" id="bAP-3Z-wFH"/>
+                <constraint firstItem="F7g-24-cs4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="h4F-ut-FWZ"/>
+                <constraint firstAttribute="trailing" secondItem="dU2-Qv-VGD" secondAttribute="trailing" constant="8" id="haC-Ge-qmV"/>
+                <constraint firstItem="dU2-Qv-VGD" firstAttribute="top" secondItem="Du8-S1-3dT" secondAttribute="bottom" constant="8" id="hcz-6A-l64"/>
+                <constraint firstItem="r7M-YM-gpI" firstAttribute="top" secondItem="F7g-24-cs4" secondAttribute="bottom" constant="8" id="hhr-CP-M3f"/>
+                <constraint firstItem="dU2-Qv-VGD" firstAttribute="top" secondItem="r7M-YM-gpI" secondAttribute="bottom" constant="8" id="ht4-v1-Cel"/>
+                <constraint firstItem="F7g-24-cs4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="jsn-Lv-Ktb"/>
+                <constraint firstItem="6hb-su-zhh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="t0t-IS-vRA"/>
+                <constraint firstItem="J7z-5a-chM" firstAttribute="top" secondItem="F7g-24-cs4" secondAttribute="bottom" constant="8" id="xfD-gf-UFQ"/>
+                <constraint firstAttribute="trailing" secondItem="Du8-S1-3dT" secondAttribute="trailing" id="yDQ-vT-U9g"/>
+                <constraint firstAttribute="bottom" secondItem="30w-fR-D61" secondAttribute="bottom" constant="8" id="yes-co-KOI"/>
+                <constraint firstItem="Du8-S1-3dT" firstAttribute="width" secondItem="FX3-zK-rLd" secondAttribute="width" id="yj8-Pg-EbA"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="226" y="227"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wallpaper" width="640" height="1136"/>
+    </resources>
+</document>

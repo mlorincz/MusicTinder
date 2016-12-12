@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ArtistRoundedView" customModule="MusicTinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ev-ML-Y4s">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loupe" translatesAutoresizingMaskIntoConstraints="NO" id="7jK-iY-LZo">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="eMi-jY-qJ4">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="D4j-Qj-HM8"/>
+                        <constraint firstAttribute="width" constant="20" id="Nfs-py-2dR"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7jK-iY-LZo" secondAttribute="bottom" id="57u-s9-1yi"/>
+                <constraint firstAttribute="trailing" secondItem="2Ev-ML-Y4s" secondAttribute="trailing" id="5VS-S6-mfR"/>
+                <constraint firstItem="2Ev-ML-Y4s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7m2-Dv-bV3"/>
+                <constraint firstAttribute="bottom" secondItem="2Ev-ML-Y4s" secondAttribute="bottom" id="ES4-Tg-VL9"/>
+                <constraint firstItem="2Ev-ML-Y4s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WyX-QJ-ufa"/>
+                <constraint firstItem="7jK-iY-LZo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YIq-Xh-1zc"/>
+                <constraint firstItem="eMi-jY-qJ4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="c6o-75-bzb"/>
+                <constraint firstAttribute="trailing" secondItem="7jK-iY-LZo" secondAttribute="trailing" id="e9G-pu-7B3"/>
+                <constraint firstItem="7jK-iY-LZo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="w1h-jJ-9Dq"/>
+                <constraint firstItem="eMi-jY-qJ4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xYs-kS-USt"/>
+            </constraints>
+            <connections>
+                <outlet property="artistImageView" destination="2Ev-ML-Y4s" id="bCs-0h-hUO"/>
+                <outlet property="loadingIndicator" destination="eMi-jY-qJ4" id="5h7-35-tI8"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="loupe" width="113" height="113"/>
+    </resources>
+</document>

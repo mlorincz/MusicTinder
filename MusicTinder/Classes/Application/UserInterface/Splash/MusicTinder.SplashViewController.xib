@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="MusicTinder" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingView" destination="zDK-v2-jsN" id="2qp-QB-1PM"/>
+                <outlet property="view" destination="7rw-bq-1Vj" id="hXq-vi-LbS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7rw-bq-1Vj">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9x-ud-dx1">
+                    <rect key="frame" x="150" y="150" width="300" height="300"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="s0G-nI-ePy">
+                            <rect key="frame" x="50" y="8" width="200" height="200"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="i3w-IX-NsD"/>
+                                <constraint firstAttribute="height" constant="200" id="maZ-Ne-SCH"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zDK-v2-jsN">
+                            <rect key="frame" x="111" y="200" width="78" height="80"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="yQz-DZ-FS6">
+                                    <rect key="frame" x="21" y="12" width="37" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="37" id="rLz-5U-hKd"/>
+                                        <constraint firstAttribute="height" constant="37" id="tVa-Nj-aBm"/>
+                                    </constraints>
+                                    <color key="color" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </activityIndicatorView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReS-yh-uly">
+                                    <rect key="frame" x="2" y="50" width="74" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="Pzr-qF-aGk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="yQz-DZ-FS6" firstAttribute="centerX" secondItem="zDK-v2-jsN" secondAttribute="centerX" id="27P-eY-7vv"/>
+                                <constraint firstAttribute="trailing" secondItem="ReS-yh-uly" secondAttribute="trailing" constant="2" id="BSj-Cc-jIL"/>
+                                <constraint firstAttribute="height" constant="80" id="Dlu-bp-nAe"/>
+                                <constraint firstItem="ReS-yh-uly" firstAttribute="leading" secondItem="zDK-v2-jsN" secondAttribute="leading" constant="2" id="FNx-IZ-uV7"/>
+                                <constraint firstAttribute="bottom" secondItem="ReS-yh-uly" secondAttribute="bottom" constant="10" id="Ku0-M4-S9S"/>
+                                <constraint firstItem="yQz-DZ-FS6" firstAttribute="top" secondItem="zDK-v2-jsN" secondAttribute="top" constant="12" id="Tme-zA-pTE"/>
+                                <constraint firstAttribute="width" constant="78" id="x2P-6n-VsW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zDK-v2-jsN" firstAttribute="centerX" secondItem="E9x-ud-dx1" secondAttribute="centerX" id="6Or-VP-2a0"/>
+                        <constraint firstAttribute="width" constant="300" id="FMl-ku-bLE"/>
+                        <constraint firstAttribute="bottom" secondItem="zDK-v2-jsN" secondAttribute="bottom" constant="20" id="Fj8-Ez-0s9"/>
+                        <constraint firstItem="s0G-nI-ePy" firstAttribute="top" secondItem="E9x-ud-dx1" secondAttribute="top" constant="8" id="Fuj-iz-WnB"/>
+                        <constraint firstItem="s0G-nI-ePy" firstAttribute="centerX" secondItem="E9x-ud-dx1" secondAttribute="centerX" id="HCP-I6-WPb"/>
+                        <constraint firstAttribute="height" constant="300" id="tSH-JL-FgV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="E9x-ud-dx1" firstAttribute="centerY" secondItem="7rw-bq-1Vj" secondAttribute="centerY" id="4MI-bz-sDj"/>
+                <constraint firstItem="E9x-ud-dx1" firstAttribute="centerX" secondItem="7rw-bq-1Vj" secondAttribute="centerX" id="qJy-kY-Vqe"/>
+            </constraints>
+            <point key="canvasLocation" x="-114" y="-6"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="140" height="140"/>
+    </resources>
+</document>

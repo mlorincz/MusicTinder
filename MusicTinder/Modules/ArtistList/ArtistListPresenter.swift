@@ -26,20 +26,20 @@ class ArtistListPresenter {
 
 extension ArtistListPresenter: ArtistListEventHandler {
 
-    func handleDiscoverTapped() {
+    func didTapDiscoverButton() {
         router?.pushDiscoverScreen()
     }
 
-    func fetchPersistedArtists() {
+    func viewDidLoad() {
         interactor?.fetchArtists()
+    }
+
+    func didSelectArtist(_ artist: Artist) {
+        router?.pushArtistDetailScreen(artist)
     }
 
     func didDeleteArtist(_ artist: Artist) {
         interactor?.deleteArtist(artist)
-    }
-
-    func artistSelected(_ artist: Artist) {
-        router?.pushArtistDetailScreen(artist)
     }
 }
 
@@ -52,7 +52,11 @@ extension ArtistListPresenter: ArtistListInteractorDelegate {
     }
 
     func fetchArtistsDidFinishSuccessful(with artists: [Artist]) {
-        view?.updateArtists(artists)
+
+        let mockArtist = Artist(name: "Children Of Bodom", mbid: "123456789", info: "Melodic Black-Death Metal from Finland", genre: "Metal", imageUrl: .none)
+        let mockArtists = [mockArtist, mockArtist, mockArtist]
+
+        view?.updateArtists(mockArtists)
     }
 
     func deleteArtistsDidFail(with error: Error?) {

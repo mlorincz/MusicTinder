@@ -49,13 +49,7 @@ extension DiscoverViewController: UITableViewDelegate, UITableViewDataSource {
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(ArtistTableViewCell.self), for: indexPath) as? ArtistTableViewCell else { return UITableViewCell() }
         let artist = artists[indexPath.row]
-        cell.configureWithArtist(artist)
-
-        // TODO: Implement
-//        if let imageUrl = artist.imageUrl {
-//            loadImageForCell(cell, imageURL: imageUrl)
-//        }
-
+        cell.configure(with: artist)
         return cell
     }
 

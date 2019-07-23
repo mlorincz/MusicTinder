@@ -280,7 +280,6 @@
 				9CCE8FD41DCF2C840068F8D4 /* Tinder */,
 				9C7E4F151DCE18200091E0FE /* Common */,
 				9C7E4EF31DCDABB40091E0FE /* Discover */,
-				9C2812D81DCBEAF900209079 /* ArtistList */,
 				9C2812BC1DCBD93500209079 /* Splash */,
 				9C5FDCF41DD7C9B30056E0D9 /* ArtistDetail */,
 			);
@@ -308,13 +307,6 @@
 				9C5FDCE91DD78CB90056E0D9 /* ArtistListInteractor.swift */,
 				9C2812D21DCBE91F00209079 /* ArtistListWireframe.swift */,
 				C33DC86722E6D46000DCE923 /* ARtistListRouter.swift */,
-			);
-			path = ArtistList;
-			sourceTree = "<group>";
-		};
-		9C2812D81DCBEAF900209079 /* ArtistList */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = ArtistList;
 			sourceTree = "<group>";
@@ -449,8 +441,6 @@
 			isa = PBXGroup;
 			children = (
 				9C7E4F1C1DCE1E2B0091E0FE /* ArtistNameLabel.swift */,
-				9C7E4F161DCE18310091E0FE /* ArtistTableViewCell.swift */,
-				9C7E4F181DCE1A590091E0FE /* ArtistTableViewCell.xib */,
 				9C7E4F211DCE45E40091E0FE /* SearchView.swift */,
 				9C7E4F1F1DCE43BD0091E0FE /* SearchView.xib */,
 				9C7E4F2C1DCE8A580091E0FE /* NoSearchResultsTableViewCell.swift */,
@@ -520,6 +510,8 @@
 			isa = PBXGroup;
 			children = (
 				9C2812DB1DCBECE800209079 /* MusicTinder.ArtistListViewController.xib */,
+				9C7E4F161DCE18310091E0FE /* ArtistTableViewCell.swift */,
+				9C7E4F181DCE1A590091E0FE /* ArtistTableViewCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -638,6 +630,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-MusicTinder/Pods-MusicTinder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -645,6 +638,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

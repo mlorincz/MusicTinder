@@ -4,23 +4,29 @@ PODS:
   - Realm/Headers (3.11.1)
   - RealmSwift (3.11.1):
     - Realm (= 3.11.1)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
   - RealmSwift
+  - SDWebImage
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Realm
     - RealmSwift
+    - SDWebImage
     - SwiftLint
 
 SPEC CHECKSUMS:
   Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
   RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: c408bdea0bf7b50d0f7aaa93d14d9e7ea07abcee
+PODFILE CHECKSUM: e7c82083949b1d5f6ab166f6566f5e04e9593259
 
 COCOAPODS: 1.6.1

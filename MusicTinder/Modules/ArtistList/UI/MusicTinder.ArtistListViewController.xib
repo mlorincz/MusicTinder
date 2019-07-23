@@ -16,8 +16,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistListViewController" customModule="MusicTinder" customModuleProvider="target">
             <connections>
+                <outlet property="artistsTableView" destination="xbx-Aa-9ke" id="RHM-VV-9Kz"/>
                 <outlet property="discoverButton" destination="6N3-rt-9c8" id="91V-NF-zBS"/>
-                <outlet property="tableView" destination="xbx-Aa-9ke" id="9Kl-nt-eIM"/>
                 <outlet property="view" destination="iN0-l3-epB" id="3y9-nG-A3x"/>
             </connections>
         </placeholder>

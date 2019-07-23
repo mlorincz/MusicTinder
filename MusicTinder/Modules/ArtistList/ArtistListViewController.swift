@@ -11,63 +11,70 @@ import UIKit
 class ArtistListViewController: UIViewController {
 
     weak var eventHandler: ArtistListEventHandler?
+
     @IBOutlet private weak var discoverButton: UIButton!
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var artistsTableView: UITableView!
+
     private var artists = [Artist]()
     private var selectedIndexPath: IndexPath?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        customizeNavigationBar()
-        customizeDiscoverButton()
+        eventHandler?.viewDidLoad()
+        configureUI()
         registerCellNibs()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        eventHandler?.fetchPersistedArtists()
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        tableView?.contentInset.top = topLayoutGuide.length
+        artistsTableView?.contentInset.top = topLayoutGuide.length
         updateAppearance()
 
         if artists.isEmpty == false && selectedIndexPath == .none {
-            tableView?.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+            artistsTableView?.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
         }
-    }
-
-    @IBAction func discoverButtonTapped() {
-        eventHandler?.handleDiscoverTapped()
     }
 }
 
+// MARK: - IBActions
+
 private extension ArtistListViewController {
 
+    @IBAction func discoverButtonTapped() {
+        eventHandler?.didTapDiscoverButton()
+    }
+}
+
+// MARK: - Private Extension
+
+private extension ArtistListViewController {
+
+    func configureUI() {
+        customizeNavigationBar()
+        discoverButton.layer.cornerRadius = 5.0
+    }
+
     func updateAppearance() {
-        tableView?.backgroundColor = artists.isEmpty ? UIColor.clear : UIColor.mtBlackColor()
+        artistsTableView?.backgroundColor = artists.isEmpty ? .clear : .mtBlackColor()
         self.title = "ARTIST LIBRARY"
     }
 
     func registerCellNibs() {
         let artistTableViewCellNibName = NSStringFromClass(ArtistTableViewCell.self)
         let artistTableViewCellNib = UINib(nibName: artistTableViewCellNibName.components(separatedBy: ".").last!, bundle: nil)
-        tableView?.register(artistTableViewCellNib, forCellReuseIdentifier: artistTableViewCellNibName)
+        artistsTableView?.register(artistTableViewCellNib, forCellReuseIdentifier: artistTableViewCellNibName)
     }
 
     func customizeNavigationBar() {
         self.navigationController?.navigationBar.titleTextAttributes = [.font: UIFont.applicationFontWithSize(16.0),
                                                                         .foregroundColor: UIColor.mtWhiteColor()]
-        self.navigationController?.navigationBar.barTintColor = UIColor.mtBlackColor()
-    }
-
-    func customizeDiscoverButton() {
-        discoverButton.layer.cornerRadius = 5.0
+        self.navigationController?.navigationBar.barTintColor = .mtBlackColor()
     }
 }
 
-extension ArtistListViewController: UITableViewDelegate, UITableViewDataSource {
+// MARK: - UITableViewDataSource
+
+extension ArtistListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150.0
@@ -80,34 +87,9 @@ extension ArtistListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(ArtistTableViewCell.self), for: indexPath) as? ArtistTableViewCell else { return UITableViewCell() }
         let artist = artists[indexPath.row]
-        cell.configureWithArtist(artist)
+        cell.configure(with: artist)
         cell.textLabel?.font = UIFont.applicationFontWithSize(12.0)
-
-        // TODO: Implement
-//        if let imageUrl = artist.imageUrl {
-//            loadImageForCell(cell, imageURL: imageUrl)
-//        }
-
         return cell
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-        if artists.indices.contains(indexPath.row) {
-            print("[DEBUG] - push artist detail: \(artists[indexPath.row].name)")
-            eventHandler?.artistSelected(artists[indexPath.row])
-            selectedIndexPath = indexPath
-        }
-    }
-
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        let deleteButton = UITableViewRowAction(style: .default, title: "\u{0020} \u{0020} \u{0020} \u{0020} \u{0020} \u{0020} \u{0020}") { _, _ in
-            self.tableView(tableView, commit: UITableViewCell.EditingStyle.delete, forRowAt: indexPath)
-        }
-
-        deleteButton.backgroundColor = UIColor(patternImage: UIImage(named: "delete_action_purple_icon_150")!)
-
-        return [deleteButton]
     }
 
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -125,10 +107,32 @@ extension ArtistListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+// MARK: - UITableViewDelegate
+
+extension ArtistListViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        eventHandler?.didSelectArtist(artists[indexPath.row])
+        selectedIndexPath = indexPath
+    }
+
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteButton = UITableViewRowAction(style: .default, title: "\u{0020} \u{0020} \u{0020} \u{0020} \u{0020} \u{0020} \u{0020}") { _, _ in
+            self.tableView(tableView, commit: UITableViewCell.EditingStyle.delete, forRowAt: indexPath)
+        }
+
+        deleteButton.backgroundColor = UIColor(patternImage: UIImage(named: "delete_action_purple_icon_150")!)
+
+        return [deleteButton]
+    }
+}
+
+// MARK: - ArtistListView
+
 extension ArtistListViewController: ArtistListView {
 
     func updateArtists(_ artists: [Artist]) {
         self.artists = artists
-        self.tableView?.reloadData()
+        artistsTableView?.reloadData()
     }
 }

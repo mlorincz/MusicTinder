@@ -10,8 +10,8 @@ import Foundation
 
 protocol ArtistListEventHandler: class {
 
-    func handleDiscoverTapped()
-    func fetchPersistedArtists()
+    func didTapDiscoverButton()
+    func viewDidLoad()
     func didDeleteArtist(_ artist: Artist)
-    func artistSelected(_ artist: Artist)
+    func didSelectArtist(_ artist: Artist)
 }

@@ -7,6 +7,7 @@ target 'MusicTinder' do
 
   # Pods for MusicTinder
   pod 'SwiftLint'
+  pod 'SDWebImage'
   pod 'RealmSwift', :inhibit_warnings => true
 
 end

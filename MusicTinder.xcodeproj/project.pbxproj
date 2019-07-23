@@ -26,7 +26,6 @@
 		9C2812D71DCBEAE100209079 /* ArtistListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2812D61DCBEAE100209079 /* ArtistListView.swift */; };
 		9C2812DA1DCBEB0F00209079 /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2812D91DCBEB0F00209079 /* ArtistListViewController.swift */; };
 		9C2812DC1DCBECE800209079 /* MusicTinder.ArtistListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2812DB1DCBECE800209079 /* MusicTinder.ArtistListViewController.xib */; };
-		9C5DAB721DD3B9BB005D35B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5DAB711DD3B9BB005D35B5 /* AVFoundation.framework */; };
 		9C5DAB741DD3BFE7005D35B5 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5DAB731DD3BFE7005D35B5 /* Song.swift */; };
 		9C5FDCEA1DD78CB90056E0D9 /* ArtistListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FDCE91DD78CB90056E0D9 /* ArtistListInteractor.swift */; };
 		9C5FDCEF1DD7C9800056E0D9 /* ArtistDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5FDCEE1DD7C9800056E0D9 /* ArtistDetailPresenter.swift */; };
@@ -56,9 +55,6 @@
 		9C7E4F1D1DCE1E2B0091E0FE /* ArtistNameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E4F1C1DCE1E2B0091E0FE /* ArtistNameLabel.swift */; };
 		9C7E4F201DCE43BD0091E0FE /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7E4F1F1DCE43BD0091E0FE /* SearchView.xib */; };
 		9C7E4F221DCE45E40091E0FE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E4F211DCE45E40091E0FE /* SearchView.swift */; };
-		9C7E4F251DCE87080091E0FE /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E4F241DCE87080091E0FE /* LoadingIndicator.swift */; };
-		9C7E4F271DCE871F0091E0FE /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E4F261DCE871F0091E0FE /* LoadingIndicatorView.swift */; };
-		9C7E4F291DCE872D0091E0FE /* LoadingIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7E4F281DCE872D0091E0FE /* LoadingIndicatorView.xib */; };
 		9C7E4F2B1DCE8A4E0091E0FE /* NoSearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7E4F2A1DCE8A4E0091E0FE /* NoSearchResultsTableViewCell.xib */; };
 		9C7E4F2D1DCE8A580091E0FE /* NoSearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E4F2C1DCE8A580091E0FE /* NoSearchResultsTableViewCell.swift */; };
 		9CC40DB41DD89CAA00527266 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CC40DB31DD89CAA00527266 /* search.json */; };
@@ -72,28 +68,18 @@
 		9CCE8FDE1DCF7E7F0068F8D4 /* ArtistRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCE8FDD1DCF7E7F0068F8D4 /* ArtistRoundedView.swift */; };
 		9CCE8FE01DCF7E8A0068F8D4 /* ArtistRoundedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCE8FDF1DCF7E8A0068F8D4 /* ArtistRoundedView.xib */; };
 		9CF947A01DD19E5600F72E37 /* ITunesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF9479F1DD19E5600F72E37 /* ITunesService.swift */; };
-		9CFAA2FE1DEE289B00A7209F /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6FB8E91DD7565200C85D3E /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CFAA2FF1DEE289B00A7209F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6FB8EA1DD7565200C85D3E /* RealmSwift.framework */; };
-		9CFAA3001DEE289B00A7209F /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6FB8EA1DD7565200C85D3E /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9CFAA3021DEE28C100A7209F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6FB8E91DD7565200C85D3E /* Realm.framework */; };
+		C33DC86022E6CF0C00DCE923 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DC85F22E6CF0C00DCE923 /* MainRouter.swift */; };
+		C33DC86222E6CF1A00DCE923 /* PayloadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DC86122E6CF1A00DCE923 /* PayloadHandler.swift */; };
+		C33DC86622E6D01600DCE923 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DC86522E6D01600DCE923 /* Screen.swift */; };
+		C33DC86822E6D46000DCE923 /* ARtistListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DC86722E6D46000DCE923 /* ARtistListRouter.swift */; };
+		C33DC86A22E6D4EC00DCE923 /* ArtistListInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DC86922E6D4EC00DCE923 /* ArtistListInteractorDelegate.swift */; };
+		C33DC86C22E6D78A00DCE923 /* ArtistListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DC86B22E6D78A00DCE923 /* ArtistListEventHandler.swift */; };
+		C33DC87222E6EB5300DCE923 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33DC87122E6EB5300DCE923 /* LoadingView.swift */; };
+		F6A12C8CD18B23BCD635BEBB /* Pods_MusicTinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6526AB0FBE6F425BD99476D /* Pods_MusicTinder.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9CFAA3011DEE289B00A7209F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9CFAA3001DEE289B00A7209F /* RealmSwift.framework in Embed Frameworks */,
-				9CFAA2FE1DEE289B00A7209F /* Realm.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		71B768F944A55EED20712C7F /* Pods-MusicTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicTinder.release.xcconfig"; path = "Target Support Files/Pods-MusicTinder/Pods-MusicTinder.release.xcconfig"; sourceTree = "<group>"; };
 		9C2812901DCBD2C100209079 /* MusicTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2812931DCBD2C100209079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C2812981DCBD2C100209079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,7 +101,6 @@
 		9C2812D61DCBEAE100209079 /* ArtistListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistListView.swift; sourceTree = "<group>"; };
 		9C2812D91DCBEB0F00209079 /* ArtistListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
 		9C2812DB1DCBECE800209079 /* MusicTinder.ArtistListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTinder.ArtistListViewController.xib; sourceTree = "<group>"; };
-		9C5DAB711DD3B9BB005D35B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9C5DAB731DD3BFE7005D35B5 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		9C5FDCE91DD78CB90056E0D9 /* ArtistListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistListInteractor.swift; sourceTree = "<group>"; };
 		9C5FDCEE1DD7C9800056E0D9 /* ArtistDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailPresenter.swift; sourceTree = "<group>"; };
@@ -125,8 +110,6 @@
 		9C5FDCF71DD7C9DF0056E0D9 /* MusicTinder.ArtistDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTinder.ArtistDetailViewController.xib; sourceTree = "<group>"; };
 		9C5FDCF91DD85CA50056E0D9 /* ArtistDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailInteractor.swift; sourceTree = "<group>"; };
 		9C5FDCFC1DD86F4C0056E0D9 /* getInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getInfo.json; sourceTree = "<group>"; };
-		9C6FB8E91DD7565200C85D3E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		9C6FB8EA1DD7565200C85D3E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		9C6FB8F31DD75A0F00C85D3E /* PersistencyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyService.swift; sourceTree = "<group>"; };
 		9C6FB8F61DD75CE400C85D3E /* RealmArtist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmArtist.swift; sourceTree = "<group>"; };
 		9C7378CE1DD3215200A30182 /* topArtists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topArtists.json; sourceTree = "<group>"; };
@@ -147,9 +130,6 @@
 		9C7E4F1C1DCE1E2B0091E0FE /* ArtistNameLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistNameLabel.swift; sourceTree = "<group>"; };
 		9C7E4F1F1DCE43BD0091E0FE /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
 		9C7E4F211DCE45E40091E0FE /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		9C7E4F241DCE87080091E0FE /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
-		9C7E4F261DCE871F0091E0FE /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
-		9C7E4F281DCE872D0091E0FE /* LoadingIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingIndicatorView.xib; sourceTree = "<group>"; };
 		9C7E4F2A1DCE8A4E0091E0FE /* NoSearchResultsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoSearchResultsTableViewCell.xib; sourceTree = "<group>"; };
 		9C7E4F2C1DCE8A580091E0FE /* NoSearchResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoSearchResultsTableViewCell.swift; sourceTree = "<group>"; };
 		9CC40DB31DD89CAA00527266 /* search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
@@ -163,6 +143,15 @@
 		9CCE8FDD1DCF7E7F0068F8D4 /* ArtistRoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistRoundedView.swift; sourceTree = "<group>"; };
 		9CCE8FDF1DCF7E8A0068F8D4 /* ArtistRoundedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistRoundedView.xib; sourceTree = "<group>"; };
 		9CF9479F1DD19E5600F72E37 /* ITunesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesService.swift; sourceTree = "<group>"; };
+		B6526AB0FBE6F425BD99476D /* Pods_MusicTinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicTinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C33DC85F22E6CF0C00DCE923 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		C33DC86122E6CF1A00DCE923 /* PayloadHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadHandler.swift; sourceTree = "<group>"; };
+		C33DC86522E6D01600DCE923 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		C33DC86722E6D46000DCE923 /* ARtistListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARtistListRouter.swift; sourceTree = "<group>"; };
+		C33DC86922E6D4EC00DCE923 /* ArtistListInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListInteractorDelegate.swift; sourceTree = "<group>"; };
+		C33DC86B22E6D78A00DCE923 /* ArtistListEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListEventHandler.swift; sourceTree = "<group>"; };
+		C33DC87122E6EB5300DCE923 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CBCB84A80264CCE6F62EF8A0 /* Pods-MusicTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicTinder.debug.xcconfig"; path = "Target Support Files/Pods-MusicTinder/Pods-MusicTinder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,20 +159,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CFAA3021DEE28C100A7209F /* Realm.framework in Frameworks */,
-				9CFAA2FF1DEE289B00A7209F /* RealmSwift.framework in Frameworks */,
-				9C5DAB721DD3B9BB005D35B5 /* AVFoundation.framework in Frameworks */,
+				F6A12C8CD18B23BCD635BEBB /* Pods_MusicTinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09EDF0C0C62EE1E989EBA9B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6526AB0FBE6F425BD99476D /* Pods_MusicTinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72BEC30E07FAE852ECDBAD2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB84A80264CCE6F62EF8A0 /* Pods-MusicTinder.debug.xcconfig */,
+				71B768F944A55EED20712C7F /* Pods-MusicTinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9C2812871DCBD2C100209079 = {
 			isa = PBXGroup;
 			children = (
 				9C2812921DCBD2C100209079 /* MusicTinder */,
 				9C2812911DCBD2C100209079 /* Products */,
+				72BEC30E07FAE852ECDBAD2F /* Pods */,
+				09EDF0C0C62EE1E989EBA9B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,8 +204,13 @@
 		9C2812921DCBD2C100209079 /* MusicTinder */ = {
 			isa = PBXGroup;
 			children = (
-				9C2812A51DCBD39E00209079 /* Classes */,
+				C33DC85E22E6CEB500DCE923 /* Protocols */,
+				9C2812A71DCBD39E00209079 /* Modules */,
+				C33DC86F22E6EB4300DCE923 /* ApplicationHelper */,
+				9C2812BB1DCBD93500209079 /* UserInterface */,
+				9C2812A81DCBD39E00209079 /* BusinessLogic */,
 				9C7E4EEF1DCDA21D0091E0FE /* Resources */,
+				9C2812931DCBD2C100209079 /* AppDelegate.swift */,
 				9C2812971DCBD2C100209079 /* Main.storyboard */,
 				9C28129A1DCBD2C100209079 /* Assets.xcassets */,
 				9C28129C1DCBD2C100209079 /* LaunchScreen.storyboard */,
@@ -208,36 +219,15 @@
 			path = MusicTinder;
 			sourceTree = "<group>";
 		};
-		9C2812A51DCBD39E00209079 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				9C2812931DCBD2C100209079 /* AppDelegate.swift */,
-				9C2812A61DCBD39E00209079 /* Application */,
-				9C2812A81DCBD39E00209079 /* BusinessLogic */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		9C2812A61DCBD39E00209079 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				9C7E4F011DCDB0F70091E0FE /* Externals */,
-				9C2812A71DCBD39E00209079 /* Modules */,
-				9C2812BB1DCBD93500209079 /* UserInterface */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
 		9C2812A71DCBD39E00209079 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C33DC86322E6CFB600DCE923 /* Main */,
 				9CCE8FC91DCF2C090068F8D4 /* Tinder */,
 				9C7E4EF81DCDAC500091E0FE /* Discover */,
 				9C2812D11DCBE91100209079 /* ArtistList */,
 				9C2812B41DCBD8E000209079 /* Splash */,
 				9C5FDCEB1DD7C9660056E0D9 /* ArtistDetail */,
-				9C2812AA1DCBD4C100209079 /* Wireframe.swift */,
-				9C2812C11DCBE54E00209079 /* MainWireframe.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -288,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				9CCE8FD41DCF2C840068F8D4 /* Tinder */,
-				9C7E4F231DCE86FB0091E0FE /* LoadingIndicator */,
 				9C7E4F151DCE18200091E0FE /* Common */,
 				9C7E4EF31DCDABB40091E0FE /* Discover */,
 				9C2812D81DCBEAF900209079 /* ArtistList */,
@@ -310,10 +299,15 @@
 		9C2812D11DCBE91100209079 /* ArtistList */ = {
 			isa = PBXGroup;
 			children = (
-				9C2812D21DCBE91F00209079 /* ArtistListWireframe.swift */,
-				9C2812D41DCBEAD800209079 /* ArtistListPresenter.swift */,
+				C33DC86D22E6E79A00DCE923 /* UI */,
 				9C2812D61DCBEAE100209079 /* ArtistListView.swift */,
+				9C2812D91DCBEB0F00209079 /* ArtistListViewController.swift */,
+				C33DC86B22E6D78A00DCE923 /* ArtistListEventHandler.swift */,
+				9C2812D41DCBEAD800209079 /* ArtistListPresenter.swift */,
+				C33DC86922E6D4EC00DCE923 /* ArtistListInteractorDelegate.swift */,
 				9C5FDCE91DD78CB90056E0D9 /* ArtistListInteractor.swift */,
+				9C2812D21DCBE91F00209079 /* ArtistListWireframe.swift */,
+				C33DC86722E6D46000DCE923 /* ARtistListRouter.swift */,
 			);
 			path = ArtistList;
 			sourceTree = "<group>";
@@ -321,8 +315,6 @@
 		9C2812D81DCBEAF900209079 /* ArtistList */ = {
 			isa = PBXGroup;
 			children = (
-				9C2812D91DCBEB0F00209079 /* ArtistListViewController.swift */,
-				9C2812DB1DCBECE800209079 /* MusicTinder.ArtistListViewController.xib */,
 			);
 			path = ArtistList;
 			sourceTree = "<group>";
@@ -355,16 +347,6 @@
 				9CC40DB51DD8A28300527266 /* getSimilar.json */,
 			);
 			path = Artist;
-			sourceTree = "<group>";
-		};
-		9C6FB8D51DD7500100C85D3E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9C6FB8E91DD7565200C85D3E /* Realm.framework */,
-				9C6FB8EA1DD7565200C85D3E /* RealmSwift.framework */,
-				9C5DAB711DD3B9BB005D35B5 /* AVFoundation.framework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		9C6FB8F21DD759FF00C85D3E /* Database */ = {
@@ -437,23 +419,6 @@
 			path = Discover;
 			sourceTree = "<group>";
 		};
-		9C7E4F011DCDB0F70091E0FE /* Externals */ = {
-			isa = PBXGroup;
-			children = (
-				9C6FB8D51DD7500100C85D3E /* Frameworks */,
-				9C7E4F021DCDB0F70091E0FE /* ApplicationHelper */,
-			);
-			path = Externals;
-			sourceTree = "<group>";
-		};
-		9C7E4F021DCDB0F70091E0FE /* ApplicationHelper */ = {
-			isa = PBXGroup;
-			children = (
-				9C7E4F031DCDB1070091E0FE /* UIHelper.swift */,
-			);
-			path = ApplicationHelper;
-			sourceTree = "<group>";
-		};
 		9C7E4F071DCE05530091E0FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,16 +461,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		9C7E4F231DCE86FB0091E0FE /* LoadingIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				9C7E4F241DCE87080091E0FE /* LoadingIndicator.swift */,
-				9C7E4F261DCE871F0091E0FE /* LoadingIndicatorView.swift */,
-				9C7E4F281DCE872D0091E0FE /* LoadingIndicatorView.xib */,
-			);
-			path = LoadingIndicator;
-			sourceTree = "<group>";
-		};
 		9CCE8FC91DCF2C090068F8D4 /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +489,58 @@
 			path = iTunes;
 			sourceTree = "<group>";
 		};
+		C33DC85E22E6CEB500DCE923 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9C2812AA1DCBD4C100209079 /* Wireframe.swift */,
+				C33DC86122E6CF1A00DCE923 /* PayloadHandler.swift */,
+				C33DC85F22E6CF0C00DCE923 /* MainRouter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C33DC86322E6CFB600DCE923 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C33DC86422E6D00600DCE923 /* Models */,
+				9C2812C11DCBE54E00209079 /* MainWireframe.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C33DC86422E6D00600DCE923 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C33DC86522E6D01600DCE923 /* Screen.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C33DC86D22E6E79A00DCE923 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9C2812DB1DCBECE800209079 /* MusicTinder.ArtistListViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C33DC86F22E6EB4300DCE923 /* ApplicationHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9C7E4F031DCDB1070091E0FE /* UIHelper.swift */,
+				C33DC87022E6EB5300DCE923 /* Views */,
+			);
+			path = ApplicationHelper;
+			sourceTree = "<group>";
+		};
+		C33DC87022E6EB5300DCE923 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C33DC87122E6EB5300DCE923 /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -541,11 +548,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C2812A21DCBD2C100209079 /* Build configuration list for PBXNativeTarget "MusicTinder" */;
 			buildPhases = (
+				66D7CB3353DAAC4E8782AC1C /* [CP] Check Pods Manifest.lock */,
 				9C28128C1DCBD2C100209079 /* Sources */,
 				9C28128D1DCBD2C100209079 /* Frameworks */,
 				9C28128E1DCBD2C100209079 /* Resources */,
-				9CFAA3011DEE289B00A7209F /* Embed Frameworks */,
-				9C6FB8F11DD7569400C85D3E /* ShellScript */,
+				C33DC86E22E6E8C900DCE923 /* ShellScript */,
+				42659316E457BDDA14E85764 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -577,6 +585,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -608,7 +617,6 @@
 				9CC40DB41DD89CAA00527266 /* search.json in Resources */,
 				9C28129B1DCBD2C100209079 /* Assets.xcassets in Resources */,
 				9CC40DB61DD8A28300527266 /* getSimilar.json in Resources */,
-				9C7E4F291DCE872D0091E0FE /* LoadingIndicatorView.xib in Resources */,
 				9C7E4F2B1DCE8A4E0091E0FE /* NoSearchResultsTableViewCell.xib in Resources */,
 				9C7E4F001DCDAF990091E0FE /* MusicTinder.DiscoverViewController.xib in Resources */,
 				9C2812991DCBD2C100209079 /* Main.storyboard in Resources */,
@@ -619,18 +627,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9C6FB8F11DD7569400C85D3E /* ShellScript */ = {
+		42659316E457BDDA14E85764 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicTinder/Pods-MusicTinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicTinder/Pods-MusicTinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66D7CB3353DAAC4E8782AC1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicTinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C33DC86E22E6E8C900DCE923 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -640,17 +698,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C2812B11DCBD61600209079 /* ReachabilityService.swift in Sources */,
+				C33DC86822E6D46000DCE923 /* ARtistListRouter.swift in Sources */,
 				9C7E4F2D1DCE8A580091E0FE /* NoSearchResultsTableViewCell.swift in Sources */,
 				9C7E4EFD1DCDAC500091E0FE /* DiscoverView.swift in Sources */,
 				9C2812B31DCBD71200209079 /* ServiceProvider.swift in Sources */,
 				9C7E4F0E1DCE06270091E0FE /* URLProvider.swift in Sources */,
+				C33DC86C22E6D78A00DCE923 /* ArtistListEventHandler.swift in Sources */,
 				9C2812B81DCBD8FE00209079 /* SplashPresenter.swift in Sources */,
 				9C5FDCF31DD7C99C0056E0D9 /* ArtistDetailView.swift in Sources */,
-				9C7E4F271DCE871F0091E0FE /* LoadingIndicatorView.swift in Sources */,
 				9CCE8FCB1DCF2C170068F8D4 /* TinderWireframe.swift in Sources */,
+				C33DC86A22E6D4EC00DCE923 /* ArtistListInteractorDelegate.swift in Sources */,
 				9C2812DA1DCBEB0F00209079 /* ArtistListViewController.swift in Sources */,
 				9C7E4F061DCE045D0091E0FE /* DiscoverInteractor.swift in Sources */,
 				9CCE8FD31DCF2C660068F8D4 /* TinderInteractor.swift in Sources */,
+				C33DC87222E6EB5300DCE923 /* LoadingView.swift in Sources */,
 				9C5FDCFA1DD85CA50056E0D9 /* ArtistDetailInteractor.swift in Sources */,
 				9C7E4F091DCE055C0091E0FE /* Artist.swift in Sources */,
 				9C5FDCEA1DD78CB90056E0D9 /* ArtistListInteractor.swift in Sources */,
@@ -661,10 +722,13 @@
 				9C2812941DCBD2C100209079 /* AppDelegate.swift in Sources */,
 				9C5FDCEF1DD7C9800056E0D9 /* ArtistDetailPresenter.swift in Sources */,
 				9CCE8FCF1DCF2C440068F8D4 /* TinderPresenter.swift in Sources */,
+				C33DC86022E6CF0C00DCE923 /* MainRouter.swift in Sources */,
+				C33DC86222E6CF1A00DCE923 /* PayloadHandler.swift in Sources */,
 				9CCE8FD11DCF2C5A0068F8D4 /* TinderView.swift in Sources */,
 				9CCE8FDE1DCF7E7F0068F8D4 /* ArtistRoundedView.swift in Sources */,
 				9C2812C21DCBE54E00209079 /* MainWireframe.swift in Sources */,
 				9C7E4F1D1DCE1E2B0091E0FE /* ArtistNameLabel.swift in Sources */,
+				C33DC86622E6D01600DCE923 /* Screen.swift in Sources */,
 				9C2812AF1DCBD5F100209079 /* Reachability.swift in Sources */,
 				9C2812AB1DCBD4C100209079 /* Wireframe.swift in Sources */,
 				9C7E4F111DCE06740091E0FE /* ArtistService.swift in Sources */,
@@ -680,7 +744,6 @@
 				9C5FDCF61DD7C9CD0056E0D9 /* ArtistDetailViewController.swift in Sources */,
 				9CF947A01DD19E5600F72E37 /* ITunesService.swift in Sources */,
 				9C7E4F0C1DCE05FC0091E0FE /* ChartService.swift in Sources */,
-				9C7E4F251DCE87080091E0FE /* LoadingIndicator.swift in Sources */,
 				9C2812BE1DCBD94A00209079 /* SplashViewController.swift in Sources */,
 				9C2812D51DCBEAD800209079 /* ArtistListPresenter.swift in Sources */,
 				9C2812D71DCBEAE100209079 /* ArtistListView.swift in Sources */,
@@ -754,6 +817,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -794,47 +858,44 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9C2812A31DCBD2C100209079 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCB84A80264CCE6F62EF8A0 /* Pods-MusicTinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MusicTinder/Classes/Application/Externals/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MusicTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MateLorincz.MusicTinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		9C2812A41DCBD2C100209079 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B768F944A55EED20712C7F /* Pods-MusicTinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/MusicTinder/Classes/Application/Externals/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MusicTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MateLorincz.MusicTinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

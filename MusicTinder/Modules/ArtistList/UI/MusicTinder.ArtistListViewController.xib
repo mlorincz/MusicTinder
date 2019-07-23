@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fredoka-one.regular.ttf">
+            <string>FredokaOne-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistListViewController" customModule="MusicTinder" customModuleProvider="target">
+            <connections>
+                <outlet property="discoverButton" destination="6N3-rt-9c8" id="91V-NF-zBS"/>
+                <outlet property="tableView" destination="xbx-Aa-9ke" id="9Kl-nt-eIM"/>
+                <outlet property="view" destination="iN0-l3-epB" id="3y9-nG-A3x"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap discover to find artists to your library" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3x-fe-vIO">
+                    <rect key="frame" x="20" y="762" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bzt-cB-9X3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="16"/>
+                    <color key="textColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your artist library is empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfp-wf-s47">
+                    <rect key="frame" x="8" y="398" width="398" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="woi-R0-aHW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="12"/>
+                    <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xbx-Aa-9ke">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4gR-aX-nrA"/>
+                        <outlet property="delegate" destination="-1" id="JbL-vg-LhW"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N3-rt-9c8">
+                    <rect key="frame" x="30" y="820" width="354" height="46"/>
+                    <color key="backgroundColor" red="0.23529411759999999" green="0.85882352939999995" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="IIV-Xr-QrP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="20"/>
+                    <state key="normal" title="DISCOVER">
+                        <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="discoverButtonTapped" destination="-1" eventType="touchUpInside" id="7WJ-Zx-lxQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xbx-Aa-9ke" secondAttribute="bottom" id="0P7-bA-JyD"/>
+                <constraint firstItem="6N3-rt-9c8" firstAttribute="top" secondItem="l3x-fe-vIO" secondAttribute="bottom" constant="8" id="3iQ-LV-FWx"/>
+                <constraint firstItem="xbx-Aa-9ke" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3yS-QQ-dSr"/>
+                <constraint firstAttribute="trailing" secondItem="xbx-Aa-9ke" secondAttribute="trailing" id="71h-iw-0yD"/>
+                <constraint firstItem="l3x-fe-vIO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="90C-Lm-P7b"/>
+                <constraint firstItem="Sfp-wf-s47" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="B8n-AG-O19"/>
+                <constraint firstItem="Sfp-wf-s47" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EMf-dx-8l5"/>
+                <constraint firstItem="Sfp-wf-s47" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="W3i-5G-j7F"/>
+                <constraint firstAttribute="bottom" secondItem="6N3-rt-9c8" secondAttribute="bottom" constant="30" id="XdD-HJ-016"/>
+                <constraint firstItem="xbx-Aa-9ke" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="b8m-cJ-MPK"/>
+                <constraint firstItem="6N3-rt-9c8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bnh-xX-2Da"/>
+                <constraint firstAttribute="trailing" secondItem="Sfp-wf-s47" secondAttribute="trailing" constant="8" id="r0s-12-nCC"/>
+                <constraint firstItem="6N3-rt-9c8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="si8-Lp-NCA"/>
+                <constraint firstAttribute="trailing" secondItem="6N3-rt-9c8" secondAttribute="trailing" constant="30" id="w69-mN-adx"/>
+                <constraint firstAttribute="trailing" secondItem="l3x-fe-vIO" secondAttribute="trailing" constant="20" id="zUY-vf-3gZ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

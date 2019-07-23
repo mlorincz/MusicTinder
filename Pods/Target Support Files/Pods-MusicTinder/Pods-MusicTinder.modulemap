@@ -1,0 +1,6 @@
+framework module Pods_MusicTinder {
+  umbrella header "Pods-MusicTinder-umbrella.h"
+
+  export *
+  module * { export * }
+}
